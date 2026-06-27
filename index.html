@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Fooddie</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="#Reservations" class="navbar-link">Reservations</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                <li class="navbar-item"><a href="cart.html" class="navbar-link"><i class="ri-shopping-basket-line"></i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    
+ <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Fooddie</h1>
+    <p>Delicious meals delivered to your doorstep.</p>
+    <a href="#menu" class="btin">Explore Menu</a>
+  </div>
+</section>
+
+<!-- Menu Section -->
+
+<section class="cards">
+  <h1 class="topic">Starters</h1>
+  <div class="card-container">
+    <div class="card">
+      <a href="pizza.html">
+        <img src="pizza.jpg" alt="Cheese Pizza" class="card-img">
+      </a>
+      <h3 class="card-title">Cheese Pizza</h3>
+      <p class="card-desc">Loaded with extra cheese and fresh toppings.</p>
+      <p class="card-price">₹299</p>
+      <button class="btn"
+          onclick="addToCart('Cheese Pizza', 299, 'pizza.jpg')">
+           Add to Cart
+</button>
+
+    </div>
+
+    <div class="card">
+      <a href="burger.html">
+        <img src="burger.jpg" alt="Veg Burger" class="card-img">
+        </a>
+      <h3 class="card-title">Veg Burger</h3>
+      <p class="card-desc">Crispy patty with fresh veggies.</p>
+      <p class="card-price">₹199</p>
+<button class="btn"
+          onclick="addToCart('Veg Burger', 199, 'burger.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <a href="pasta.html">
+        <img src="noodles.jpg" alt="Creamy Pasta" class="card-img">
+        </a>
+      <h3 class="card-title">Creamy Pasta</h3>
+      <p class="card-desc">Rich and creamy red sauce pasta.</p>
+      <p class="card-price">₹249</p>
+<button class="btn"
+          onclick="addToCart('Creamy Pasta', 249, 'noodles.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <a href="fries.html">
+        <img src="fries.jpg" alt="French Fries" class="card-img">
+      </a>
+      <h3 class="card-title">French Fries</h3>
+      <p class="card-desc">Golden, crispy fries served hot.</p>
+      <p class="card-price">₹149</p>
+<button class="btn"
+          onclick="addToCart('French Fries', 149, 'fries.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <a href="salad.html">
+      <img src="salad.jpg" alt="Fresh Salad" class="card-img">
+      </a>
+      <h3 class="card-title">Fresh Salad</h3>
+      <p class="card-desc">Healthy mix of fresh greens and veggies.</p>
+      <p class="card-price">₹179</p>
+<button class="btn"
+          onclick="addToCart('Fresh Salad', 179, 'salad.jpg')">
+           Add to Cart
+</button>    </div>
+  </div>
+</section>
+
+<section class="cards">
+  <h1 class="topic">Main Course</h1>
+  <div class="card-container">
+    <div class="card">
+      <a href="biryani.html">
+      <img src="birayni.jpg" alt="Biryani" class="card-img">
+      </a>
+      <h3 class="card-title">Biryani</h3>
+      <p class="card-desc">Aromatic rice cooked with spices and tender meat.</p>
+      <p class="card-price">₹299</p>
+      <button class="btn"
+          onclick="addToCart('Biryani', 299, 'birayni.jpg')">
+           Add to Cart
+      </button>    </div>
+
+    <div class="card">
+      <a href="butter.html">
+      <img src="butter-chicken.jpg" alt="Butter Chicken" class="card-img">
+      </a>
+      <h3 class="card-title">Butter Chicken</h3>
+      <p class="card-desc">Creamy tomato gravy with succulent chicken pieces.</p>
+      <p class="card-price">₹349</p>
+<button class="btn"
+          onclick="addToCart('Butter Chicken', 349, 'butter-chicken.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <a href="paneer.html">
+      <img src="kadhai-panner.jpg" alt="Kadhai Paneer" class="card-img">
+      </a>
+      <h3 class="card-title">Kadhai Paneer</h3>
+      <p class="card-desc">Paneer cubes cooked with capsicum and spices.</p>
+      <p class="card-price">₹279</p>
+<button class="btn"
+          onclick="addToCart('Kadhai Paneer', 279, 'kadhai-panner.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <a href="mutton.html">
+      <img src="mutton-curry.jpg" alt="Mutton Curry" class="card-img">
+      </a>
+      <h3 class="card-title">Mutton Curry</h3>
+      <p class="card-desc">Slow-cooked mutton in rich spicy gravy.</p>
+      <p class="card-price">₹399</p>
+<button class="btn"
+          onclick="addToCart('mutton Curry', 399, 'mutton-curry.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <a href="rice.html">
+      <img src="fried-rice.jpg" alt="Fried Rice" class="card-img">
+      </a>
+      <h3 class="card-title">Fried Rice</h3>
+      <p class="card-desc">Stir-fried rice with veggies and sauces.</p>
+      <p class="card-price">₹199</p>
+<button class="btn"
+          onclick="addToCart('Fried Rice', 299, 'fried-rice.jpg')">
+           Add to Cart
+</button>    </div>
+  </div>
+</section>
+
+<!--deserts-->
+
+<section class="cards">
+  <h1 class="topic">Desserts</h1>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="choco.jpg" alt="Chocolate Lava Cake" class="card-img">
+      <h3 class="card-title">Chocolate Lava Cake</h3>
+      <p class="card-desc">Warm chocolate cake with a gooey molten center.</p>
+      <p class="card-price">₹249</p>
+<button class="btn"
+          onclick="addToCart('Chocolate Lava Cake', 249, 'choco.jpg')">
+           Add to Cart
+</button>
+    </div>
+
+    <div class="card">
+      <img src="tiramisu.jpg" alt="Tiramisu" class="card-img">
+      <h3 class="card-title">Tiramisu</h3>
+      <p class="card-desc">Classic Italian dessert with mascarpone and coffee-soaked layers.</p>
+      <p class="card-price">₹299</p>
+<button class="btn"
+          onclick="addToCart('Tiramisu', 299, 'tiramisu.jpg')">
+           Add to Cart
+</button>    </div>
+
+    <div class="card">
+      <img src="cheesecake.jpg" alt="Mango Cheesecake" class="card-img">
+      <h3 class="card-title">Mango Cheesecake</h3>
+      <p class="card-desc">Creamy cheesecake infused with fresh mango flavor.</p>
+      <p class="card-price">₹279</p>
+<button class="btn"
+          onclick="addToCart('MAngo Cheesecake', 279, 'cheesecake.jpg')">
+           Add to Cart
+</button>
+    </div>
+
+    <div class="card">
+      <img src="cake.jpg" alt="Crème Brûlée" class="card-img">
+      <h3 class="card-title">Crème Brûlée</h3>
+      <p class="card-desc">Rich custard dessert topped with caramelized sugar.</p>
+      <p class="card-price">₹329</p>
+<button class="btn"
+          onclick="addToCart('Crème Brûlée', 299, 'cake.jpg')">
+           Add to Cart
+</button>  
+  </div>
+
+    <div class="card">
+      <img src="strawberry.jpg" alt="Strawberry Shortcake" class="card-img">
+      <h3 class="card-title">Strawberry Shortcake</h3>
+      <p class="card-desc">Soft cake layered with fresh strawberries and whipped cream.</p>
+      <p class="card-price">₹259</p>
+<button class="btn"
+          onclick="addToCart('Strawberry Shortcake', 259, 'strawberry.jpg')">
+           Add to Cart
+</button>  
+    </div>
+
+  </div>
+</section>
+
+<!--drinks-->
+
+<section class="cards">
+  <h1 class="topic">Beverages</h1>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="latte.jpg" alt="Iced Caramel Latte" class="card-img">
+      <h3 class="card-title">Iced Caramel Latte</h3>
+      <p class="card-desc">Chilled espresso blended with milk and rich caramel.</p>
+      <p class="card-price">₹199</p>
+<button class="btn"
+          onclick="addToCart('Iced Caramel Latte ', 199, 'latte.jpg')">
+           Add to Cart
+</button>    
+  </div>
+
+    <div class="card">
+      <img src="smoothie.jpg" alt="Mango Smoothie" class="card-img">
+      <h3 class="card-title">Smoothie</h3>
+      <p class="card-desc">Thick and refreshing smoothie made with ripe mangoes.</p>
+      <p class="card-price">₹179</p>
+<button class="btn"
+          onclick="addToCart('Mango Smoothie', 179, 'smoothie.jpg')">
+           Add to Cart
+</button>    
+  </div>
+
+    <div class="card">
+      <img src="matcha.jpg" alt="Matcha Green Tea" class="card-img">
+      <h3 class="card-title">Matcha Green Tea</h3>
+      <p class="card-desc">Smooth and earthy Japanese matcha served chilled.</p>
+      <p class="card-price">₹189</p>
+<button class="btn"
+          onclick="addToCart('Matcha green Tea', 189, 'matcha.jpg')">
+           Add to Cart
+</button>  
+    </div>
+
+    <div class="card">
+      <img src="lemonade.jpg" alt="Fresh Lemonade" class="card-img">
+      <h3 class="card-title">Fresh Lemonade</h3>
+      <p class="card-desc">Refreshing lemonade made with fresh lemons and mint.</p>
+      <p class="card-price">₹129</p>
+<button class="btn"
+          onclick="addToCart('Fresh Lemonade', 129, 'lemonade.jpg')">
+           Add to Cart
+</button>   
+   </div>
+
+    <div class="card">
+      <img src="milkshake.jpg" alt="Strawberry Milkshake" class="card-img">
+      <h3 class="card-title">Strawberry Milkshake</h3>
+      <p class="card-desc">Creamy blend of strawberries, ice cream, and milk.</p>
+      <p class="card-price">₹159</p>
+<button class="btn"
+          onclick="addToCart('Strawberry Milkshake', 159, 'milkshake.jpg')">
+           Add to Cart
+</button>    
+  </div>
+
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <h1 class="topic">Customer Reviews</h1>
+
+  <div class="review-bubbles">
+
+    <div class="bubble">
+      <img src="shinichi.jpeg" alt="shinichi">
+      <div class="bubble-content">
+        <h3>Shinichi Izumi <span class="stars">★★★★★</span></h3>
+        <p>Amazing food quality! The pasta was super creamy and the delivery was very fast.</p>
+      </div>
+    </div>
+
+    <div class="bubble">
+      <img src="sakura.jpeg" alt="sakura">
+      <div class="bubble-content">
+        <h3>Sakura Haruno <span class="stars">★★★★★</span></h3>
+        <p>The desserts are absolutely heavenly! Mango cheesecake is my personal favorite.</p>
+      </div>
+    </div>
+
+    <div class="bubble">
+      <img src="satan.jpeg" alt="satan">
+      <div class="bubble-content">
+        <h3>Mr. Satan <span class="stars">★★★★☆</span></h3>
+        <p>Great food, good portion sizes and amazing flavors. Worth the price!</p>
+      </div>
+    </div>
+
+    <div class="bubble">
+  <img src="gojo.jpeg" alt="Gojo">
+  <div class="bubble-content">
+    <h3>Gojo Saturo <span class="stars">★★★★★</span></h3>
+    <p>Amazing food quality! The pasta was super creamy and the delivery was very fast.</p>
+  </div>
+</div>
+
+<div class="bubble">
+  <img src="naruto.jpeg" alt="Naruto">
+  <div class="bubble-content">
+    <h3>Naruto Uzumaki <span class="stars">★★★★★</span></h3>
+    <p>The ramen was fantastic! Just like I imagined in Konoha. Loved it!</p>
+  </div>
+</div>
+
+<div class="bubble">
+  <img src="luffy.jpeg" alt="Luffy">
+  <div class="bubble-content">
+    <h3>Monkey D. Luffy <span class="stars">★★★★★</span></h3>
+    <p>So much food! I could eat all day. The flavors are as bold as my adventures!</p>
+  </div>
+</div>
+
+<div class="bubble">
+  <img src="robin.jpeg" alt="robim">
+  <div class="bubble-content">
+    <h3>Niko Robin <span class="stars">★★★★★</span></h3>
+    <p>The energy I got from this food is amazing! Perfect for strength!</p>
+  </div>
+</div>
+
+<div class="bubble">
+  <img src="orihime.jpeg" alt="orihime">
+  <div class="bubble-content">
+    <h3>Orihime Inoue <span class="stars">★★★★★</span></h3>
+    <p>Beautifully prepared meals! Healthy and tasty. Definitely ordering again.</p>
+  </div>
+</div>
+
+<div class="bubble">
+  <img src="orihime.jpeg" alt="orihime">
+  <div class="bubble-content">
+    <h3>Orihime Inoue <span class="stars">★★★★★</span></h3>
+    <p>Beautifully prepared meals! Healthy and tasty. Definitely ordering again.</p>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!--review section -->
+<section class="add-review" id="add-review">
+  <h1 class="topic">Add Your Review</h1>
+
+  <form class="review-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <textarea name="review" rows="5" placeholder="Write your review here..." required></textarea>
+    
+    <button type="submit">Submit Review</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Fooddie. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="ri-facebook-fill"></i></a>
+      <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
+      <a href="#" target="_blank"><i class="ri-twitter-fill"></i></a>
+      <a href="#" target="_blank"><i class="ri-youtube-fill"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
